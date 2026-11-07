@@ -1,6 +1,6 @@
 # BHYT Analytics Portal - Hệ Thống Tổng Hợp Báo Cáo KCB BHYT
 
-[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
+[![Version](https://img.shields.io/badge/version-1.2.1-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
 [![Deployment](https://img.shields.io/badge/deploy-GitHub%20Pages-success.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Web%20Client-teal.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
@@ -126,7 +126,13 @@ bhyt-kcb-report/
 
 ## 📜 Lịch Sử Phiên Bản Tăng Dần (Semantic Versioning)
 
-### **v1.2.0 (07/11/2026) - Bản phát hành chính thức**
+### **v1.2.1 (07/11/2026) - Bản vá khẩn cấp & Tối ưu hóa tải tệp lớn**
+- **Sửa lỗi:** Khắc phục triệt để lỗi `Error: Bad compressed size: 0 != 350` khi tải tệp dữ liệu XML3 lớn (~15MB, gần 70.000 dòng).
+- **Cải tiến:** Tối ưu hóa bộ giải mã SheetJS: loại bỏ hoàn toàn thao tác cắt nhị phân (`slice`) gây hỏng bảng ghi ZIP central directory.
+- **Cải tiến:** Tự động nhận diện định dạng tệp chuẩn xác ngay từ tên tệp và tiêu đề cột dự phòng.
+- **Cải tiến:** Cập nhật thanh tiến trình mượt mà, phản hồi ngay lập tức trạng thái đọc tệp theo dung lượng MB thực tế.
+
+### **v1.2.0 (07/11/2026)**
 - **Mới:** Tích hợp Bảng Đối Chiếu Chéo tự động giữa XML và Báo cáo 79/80a (File 4).
 - **Mới:** Bộ kiểm tra mã phát sinh: cảnh báo các mã thuốc/DVKT chưa có trong danh mục.
 - **Mới:** Xuất file Excel (.xlsx) chuẩn Sở Y tế với công thức động (SUM, phép chia BQ, tỷ lệ %).

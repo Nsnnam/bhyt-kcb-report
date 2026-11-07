@@ -27,6 +27,7 @@ import {
 } from './utils/storage';
 import {
   detectFileType,
+  extractSheetHeaders,
   parseExcelWorkbook,
   parseXML1Sheet,
   parseXML2Sheet,
@@ -104,20 +105,41 @@ export const App: React.FC = () => {
       setProcessProgress({
         current: Math.round(((i + 1) / fileList.length) * 100),
         total: 100,
-        message: `Đang đọc tệp ${file.name}...`
+        message: `Đang đọc tệp ${file.name} (${(file.size / (1024 * 1024)).toFixed(1)} MB)...`
       });
+
+      // Allow UI to render progress update
+      await new Promise((resolve) => setTimeout(resolve, 50));
 
       try {
         const buffer = await file.arrayBuffer();
         const wb = parseExcelWorkbook(buffer);
-        const firstSheet = wb.Sheets[wb.SheetNames[0]];
+        const firstSheetName = wb.SheetNames[0];
+        const firstSheet = wb.Sheets[firstSheetName];
 
-        // Sample headers
-        const headerRows = parseExcelWorkbook(buffer.slice(0, 50000));
-        const sampleSheet = headerRows.Sheets[headerRows.SheetNames[0]];
-        const sampleJson = Object.keys(sampleSheet || {});
+        if (!firstSheet) {
+          throw new Error('Không tìm thấy trang tính (Sheet) trong tệp Excel này.');
+        }
 
-        const detected = detectFileType(file.name, sampleJson);
+        // 1. Detect file type by file name first
+        let detected = detectFileType(file.name, []);
+
+        // 2. If unknown, inspect actual header column names in sheet without re-reading or slicing
+        if (detected === 'UNKNOWN') {
+          const headerCols = extractSheetHeaders(firstSheet);
+          detected = detectFileType(file.name, headerCols);
+        }
+
+        // 3. Fallback by standard numerical prefix or keywords
+        if (detected === 'UNKNOWN') {
+          const fn = file.name.toLowerCase();
+          if (fn.startsWith('1.') || fn.includes('xml1')) detected = 'XML1';
+          else if (fn.startsWith('2.') || fn.includes('xml3')) detected = 'XML3';
+          else if (fn.startsWith('3.') || fn.includes('xml2')) detected = 'XML2';
+          else if (fn.startsWith('4.') || fn.includes('7980') || fn.includes('79_80') || fn.includes('guibhxh')) detected = 'REPORT_79_80';
+          else if (fn.startsWith('5.') || fn.includes('thuoc') || fn.includes('thuốc')) detected = 'CATALOG_THUOC';
+          else if (fn.startsWith('6.') || fn.includes('dvkt')) detected = 'CATALOG_DVKT';
+        }
 
         const meta: UploadedFileMetadata = {
           name: file.name,
@@ -161,28 +183,11 @@ export const App: React.FC = () => {
             await saveDVKTCatalog(items);
           }
         } else {
-          // If ambiguous, try detecting by content
-          if (file.name.toLowerCase().includes('1.')) {
-            newParsed.xml1 = parseXML1Sheet(firstSheet);
-            meta.detectedType = 'XML1';
-            newFiles.xml1 = meta;
-          } else if (file.name.toLowerCase().includes('2.')) {
-            newParsed.xml3 = parseXML3Sheet(firstSheet);
-            meta.detectedType = 'XML3';
-            newFiles.xml3 = meta;
-          } else if (file.name.toLowerCase().includes('3.')) {
-            newParsed.xml2 = parseXML2Sheet(firstSheet);
-            meta.detectedType = 'XML2';
-            newFiles.xml2 = meta;
-          } else if (file.name.toLowerCase().includes('4.')) {
-            newParsed.report7980 = parse7980Sheet(firstSheet);
-            meta.detectedType = 'REPORT_79_80';
-            newFiles.report7980 = meta;
-          }
+          alert(`Không thể xác định loại dữ liệu của tệp "${file.name}". Vui lòng đặt tên tệp chứa từ khóa xml1, xml2, xml3, 7980, thuoc hoặc dvkt.`);
         }
       } catch (err) {
         console.error(`Lỗi đọc file ${file.name}:`, err);
-        alert(`Không thể đọc file "${file.name}": ${String(err)}`);
+        alert(`Không thể đọc "${file.name}": ${String(err)}`);
       }
     }
 

@@ -46,6 +46,16 @@ export interface Parsed7980Row {
   t_bhtt: number;
 }
 
+export function extractSheetHeaders(sheet: XLSX.WorkSheet): string[] {
+  if (!sheet) return [];
+  try {
+    const rawHeaders = (XLSX.utils.sheet_to_json(sheet, { header: 1 })[0] || []) as unknown[];
+    return rawHeaders.map((h) => String(h || '').trim());
+  } catch {
+    return [];
+  }
+}
+
 export function detectFileType(fileName: string, headerCols: string[]): UploadedFileMetadata['detectedType'] {
   const name = fileName.toLowerCase();
   
@@ -77,12 +87,28 @@ function safeFloat(val: unknown): number {
 }
 
 export function parseExcelWorkbook(data: ArrayBuffer): XLSX.WorkBook {
-  return XLSX.read(data, {
-    type: 'array',
-    cellFormula: false,
-    cellHTML: false,
-    dense: true
-  });
+  try {
+    return XLSX.read(data, {
+      type: 'array',
+      cellFormula: false,
+      cellHTML: false,
+      cellText: false,
+      cellDates: false,
+      dense: true
+    });
+  } catch (err: unknown) {
+    console.warn('Standard dense read failed, attempting fallback read...', err);
+    try {
+      return XLSX.read(data, {
+        type: 'array',
+        cellFormula: false,
+        cellHTML: false,
+        WTF: false
+      });
+    } catch {
+      throw err;
+    }
+  }
 }
 
 export function parseXML1Sheet(sheet: XLSX.WorkSheet): ParsedXML1Row[] {

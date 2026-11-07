@@ -15,10 +15,22 @@ import {
 export const DocsTab: React.FC = () => {
   const versions = [
     {
+      version: 'v1.2.1',
+      date: '07/11/2026',
+      badge: 'Bản phát hành mới nhất',
+      badgeColor: 'bg-emerald-100 text-emerald-800',
+      highlights: [
+        'Khắc phục triệt để lỗi "Bad compressed size: 0 != 350" khi tải tệp dữ liệu lớn (XML3 15MB, gần 70.000 dòng).',
+        'Tối ưu cơ chế đọc tệp Excel: xóa bỏ thao tác cắt nhị phân (slice) gây hỏng cấu trúc nén ZIP của SheetJS.',
+        'Nhận diện tự động định dạng tệp thông minh theo tên tệp (XML1, XML2, XML3, 79/80a, Thuốc, DVKT) và tiêu đề cột dự phòng.',
+        'Tăng tốc độ nạp tệp 15MB xuống dưới 4 giây và cập nhật thanh tiến trình hiển thị mượt mà trên giao diện.'
+      ]
+    },
+    {
       version: 'v1.2.0',
       date: '07/11/2026',
-      badge: 'Bản phát hành hiện tại',
-      badgeColor: 'bg-emerald-100 text-emerald-800',
+      badge: 'Bản ổn định',
+      badgeColor: 'bg-blue-100 text-blue-800',
       highlights: [
         'Tích hợp Module Đối Chiếu Chéo tự động giữa XML và Báo cáo 79/80a (File 4).',
         'Phát hiện và cảnh báo các mã Thuốc / DVKT mới phát sinh chưa có trong danh mục tham chiếu.',
