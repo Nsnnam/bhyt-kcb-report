@@ -63,7 +63,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span>Nạp dữ liệu mẫu</span>
           </button>
           <span className="bg-brand-800 text-brand-200 px-2 py-0.5 rounded text-[11px] font-mono">
-            v1.2.1
+            v1.3.0
           </span>
         </div>
       </div>

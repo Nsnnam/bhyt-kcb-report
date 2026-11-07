@@ -1,0 +1,6007 @@
+{
+  "sheetName": "Lại theo tổng chi",
+  "ref": "A1:G107",
+  "merges": [
+    {
+      "s": {
+        "c": 0,
+        "r": 0
+      },
+      "e": {
+        "c": 4,
+        "r": 0
+      }
+    },
+    {
+      "s": {
+        "c": 0,
+        "r": 1
+      },
+      "e": {
+        "c": 4,
+        "r": 1
+      }
+    },
+    {
+      "s": {
+        "c": 0,
+        "r": 2
+      },
+      "e": {
+        "c": 4,
+        "r": 2
+      }
+    }
+  ],
+  "cols": [
+    null,
+    {
+      "width": 58.5546875,
+      "bestFit": "1",
+      "bestfit": "1",
+      "customwidth": "1",
+      "wpx": 527,
+      "wch": 58,
+      "MDW": 9
+    },
+    {
+      "width": 8.109375,
+      "customwidth": "1",
+      "wpx": 73,
+      "wch": 7.56,
+      "MDW": 9
+    },
+    {
+      "width": 25.77734375,
+      "style": "11",
+      "customwidth": "1",
+      "wpx": 232,
+      "wch": 25.22,
+      "MDW": 9
+    },
+    {
+      "width": 20.5546875,
+      "customwidth": "1",
+      "wpx": 185,
+      "wch": 20,
+      "MDW": 9
+    },
+    {
+      "width": 16.6640625,
+      "bestFit": "1",
+      "bestfit": "1",
+      "customwidth": "1",
+      "wpx": 150,
+      "wch": 16.11,
+      "MDW": 9
+    },
+    {
+      "width": 15.21875,
+      "customwidth": "1",
+      "wpx": 137,
+      "wch": 14.67,
+      "MDW": 9
+    }
+  ],
+  "rows": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "hpt": 66,
+      "hpx": 66
+    },
+    {
+      "hpt": 49.5,
+      "hpx": 49.5
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "hpt": 49.5,
+      "hpx": 49.5
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "hpt": 49.5,
+      "hpx": 49.5
+    },
+    {
+      "hpt": 49.5,
+      "hpx": 49.5
+    },
+    null,
+    null,
+    {
+      "hpt": 33,
+      "hpx": 33
+    },
+    null,
+    null,
+    {
+      "hpt": 33,
+      "hpx": 33
+    }
+  ],
+  "data": [
+    {
+      "row": 1,
+      "cells": {
+        "A": {
+          "v": "BÁO CÁO THÁNG 1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 2,
+      "cells": {
+        "A": {
+          "v": "Hoạt động khám bệnh, chữa bệnh bảo hiểm y tế",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 3,
+      "cells": {
+        "A": {
+          "v": "(Kèm theo Văn bản số         /SYT-BHYT&CNTT ngày 04/5/2026 của Sở Y tế Phú Thọ)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 4,
+      "cells": {}
+    },
+    {
+      "row": 5,
+      "cells": {
+        "A": {
+          "v": "Stt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Nội dung",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "ĐVT",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "Số liệu",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "v": "Ghi chú",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 6,
+      "cells": {
+        "A": {
+          "v": "I",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Số liệu KCB BHYT",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 7,
+      "cells": {
+        "A": {
+          "v": 1,
+          "t": "n",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tổng số lượt KCB BHYT (1= 1.1 + 1.2)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 8,
+      "cells": {
+        "A": {
+          "v": "1.1.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tổng số lượt NB điều trị nội trú",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "= Tổng số dữ liệu tại cột \"BC\" - file dữ liệu  XML1 khi cột MA_LOAI_KCB (mã loại) là \"03 hoặc 09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 9,
+      "cells": {
+        "A": {
+          "v": "1.1.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tổng số ngày điều trị nội trú:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Ngày",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "= Tổng số dữ liệu tại cột \"AL\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 10,
+      "cells": {
+        "A": {
+          "v": "1.1.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Bình quân ngày điều trị nội trú:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Ngày",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=D9/D8",
+          "t": "s",
+          "z": "_(* #,##0.0_);_(* \\(#,##0.0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 11,
+      "cells": {
+        "A": {
+          "v": "1.1.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tỷ lệ vào điều trị nội trú:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "%",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=D8/D7",
+          "t": "s",
+          "z": "0%",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 12,
+      "cells": {
+        "A": {
+          "v": "1.1.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Hoạt động cận lâm sàng, gồm:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 13,
+      "cells": {
+        "A": {
+          "v": "1.1.4.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Số lượt xét nghiệm",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"U\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 14,
+      "cells": {
+        "A": {
+          "v": "1.1.4.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Số lượt chụp X-Quang",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"U\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 15,
+      "cells": {
+        "A": {
+          "v": "1.1.4.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Số lượt siêu âm",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"U\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 16,
+      "cells": {
+        "A": {
+          "v": "1.1.4.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Số lượt chụp CT/MRI",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"U\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 17,
+      "cells": {
+        "A": {
+          "v": "1.2.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tổng số lượt người bệnh khám, điều trị ngoại trú",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "= Tổng số dữ liệu tại cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 18,
+      "cells": {
+        "A": {
+          "v": "1.2.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Hoạt động cận lâm sàng, gồm:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 19,
+      "cells": {
+        "A": {
+          "v": "1.2.1.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Số lượt xét nghiệm",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"U\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 20,
+      "cells": {
+        "A": {
+          "v": "1.2.1.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Số lượt chụp X-Quang",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"U\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 21,
+      "cells": {
+        "A": {
+          "v": "1.2.1.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Số lượt siêu âm",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"U\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 22,
+      "cells": {
+        "A": {
+          "v": "1.2.1.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Số lượt chụp CT/MRI",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Lượt",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"U\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 23,
+      "cells": {
+        "A": {
+          "v": "II",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "SỐ LIỆU CHI PHÍ KCB BHYT",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 24,
+      "cells": {
+        "A": {
+          "v": 1,
+          "t": "n",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tổng chi phí KCB BHYT tri trả (1= 1.1+1.2)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=D25+D26",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 25,
+      "cells": {
+        "A": {
+          "v": "1.1.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Chi cho KCB nội trú: (1.1=3.1)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=D31",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0.00_);_(* \\(#,##0.00\\);_(* \"-\"??_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 26,
+      "cells": {
+        "A": {
+          "v": "1.2.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Chi cho KCB ngoại trú: (1.2 =3.2)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=D64",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0.00_);_(* \\(#,##0.00\\);_(* \"-\"??_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 27,
+      "cells": {
+        "A": {
+          "v": 2,
+          "t": "n",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Chí phí Bình quân KCB BHYT (Tổng chi/số lượt)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 28,
+      "cells": {
+        "A": {
+          "v": "2.1.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Chi phí BQ KCB Nội trú: (Tổng chi nội trú/Số lượt kcb nội trú)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=D25/D8",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 29,
+      "cells": {
+        "A": {
+          "v": "2.2.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Chi phí BQ KCB Ngoại trú: (Tổng chi ngoại trú/số lượt kcb ngoại trú)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=D26/D17",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 30,
+      "cells": {
+        "A": {
+          "v": 3,
+          "t": "n",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Cơ cấu chi phí KCB BHYT",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 31,
+      "cells": {
+        "A": {
+          "v": "3.1.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Cơ cấu chi cho KCB nội trú:(3.1 = 3.1.1+3.1.2+3.1.3+….+3.1.8=3.1.9)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=D32+D33+D34+D40+D48+D57+D62+D63+D56",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 32,
+      "cells": {
+        "A": {
+          "v": "3.1.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tiền khám",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 33,
+      "cells": {
+        "A": {
+          "v": "3.1.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tiền giường",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 34,
+      "cells": {
+        "A": {
+          "v": "3.1.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Xét nghiệm:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=SUM(D35:D39)",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 35,
+      "cells": {
+        "A": {
+          "v": "3.1.3.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": " Hóa sinh:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 36,
+      "cells": {
+        "A": {
+          "v": "3.1.3.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Huyết học:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 37,
+      "cells": {
+        "A": {
+          "v": "3.1.3.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Vi sinh:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 38,
+      "cells": {
+        "A": {
+          "v": "3.1.3.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Giải phẫu bệnh:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 39,
+      "cells": {
+        "A": {
+          "v": "3.1.3.5",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Xét nghiệm khác:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 40,
+      "cells": {
+        "A": {
+          "v": "3.1.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Chẩn đoán hình ảnh:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "D": {
+          "v": "=SUM(D41:D47)",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 41,
+      "cells": {
+        "A": {
+          "v": "3.1.4.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "X-Quang:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 42,
+      "cells": {
+        "A": {
+          "v": "3.1.4.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Chụp cắt lớp vi tính/CT:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 43,
+      "cells": {
+        "A": {
+          "v": "3.1.4.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Chụp cộng hưởng từ/MRI:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 44,
+      "cells": {
+        "A": {
+          "v": "3.1.4.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Siêu âm:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 45,
+      "cells": {
+        "A": {
+          "v": "3.1.4.5",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Nội soi Tiêu hóa:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 46,
+      "cells": {
+        "A": {
+          "v": "3.1.4.6",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Nội soi Tai - Mũi - Họng:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 47,
+      "cells": {
+        "A": {
+          "v": "3.1.4.7",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Khác:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Nội trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 48,
+      "cells": {
+        "A": {
+          "v": "3.1.5",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Thuốc, dịch truyển",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=SUM(D49:D55)",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 49,
+      "cells": {
+        "A": {
+          "v": "3.1.5.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc kháng sinh",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 50,
+      "cells": {
+        "A": {
+          "v": "3.1.5.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc ung thư",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 51,
+      "cells": {
+        "A": {
+          "v": "3.1.5.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc Corticoid",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 52,
+      "cells": {
+        "A": {
+          "v": "3.1.5.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền dịch truyền",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 53,
+      "cells": {
+        "A": {
+          "v": "3.1.5.5",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc Vitamin",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 54,
+      "cells": {
+        "A": {
+          "v": "3.1.5.6",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc cổ truyền, thuốc dược liệu",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 55,
+      "cells": {
+        "A": {
+          "v": "3.1.5.7",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc khác",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 56,
+      "cells": {
+        "A": {
+          "v": "3.1.6",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Máu",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 57,
+      "cells": {
+        "A": {
+          "v": "3.1.7",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Phẫu thuật, thủ thuật:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": 0,
+          "f": "SUM(D58:D61)",
+          "t": "n",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 58,
+      "cells": {
+        "A": {
+          "v": "3.1.7.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Loại đặc biệt:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 59,
+      "cells": {
+        "A": {
+          "v": "3.1.7.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Loại I:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 60,
+      "cells": {
+        "A": {
+          "v": "3.1.7.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Loại II:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 61,
+      "cells": {
+        "A": {
+          "v": "3.1.7.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Loại III:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 62,
+      "cells": {
+        "A": {
+          "v": "3.1.7.5",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "PTTT loại khác",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 63,
+      "cells": {
+        "A": {
+          "v": "3.1.8",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Vật tư y tế:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" nếu cột\"E\" có mã. Nội trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 64,
+      "cells": {
+        "A": {
+          "v": "3.1.9",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Chi phí vận chuyển",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 65,
+      "cells": {
+        "A": {
+          "v": "3.2.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Cơ cấu chi KCB BHYT Ngoại trú: (3.2=3.2.1+3.2.2+3.2.3+….+3.2.8)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": 15,
+          "f": "D66+D67+D68+D74+D82+D91+D96+D97+D90",
+          "t": "e",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "v": 23,
+          "f": "#REF!-[1]NGT002_DSNBBHYTKCBNGOAITRUDENGH!$G$13",
+          "t": "e",
+          "z": "_(* #,##0.00_);_(* \\(#,##0.00\\);_(* \"-\"??_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 66,
+      "cells": {
+        "A": {
+          "v": "3.2.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tiền khám",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 67,
+      "cells": {
+        "A": {
+          "v": "3.2.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "theme": 0
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền giường",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "theme": 0
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "theme": 0
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "theme": 0
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "E": {
+          "v": "Không cần nhập",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "theme": 0
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "theme": 0
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        }
+      }
+    },
+    {
+      "row": 68,
+      "cells": {
+        "A": {
+          "v": "3.2.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Xét nghiệm:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": 0,
+          "f": "SUM(D69:D73)",
+          "t": "n",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0.00_);_(* \\(#,##0.00\\);_(* \"-\"??_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 69,
+      "cells": {
+        "A": {
+          "v": "3.2.3.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": " Hóa sinh:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 70,
+      "cells": {
+        "A": {
+          "v": "3.2.3.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Huyết học:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 71,
+      "cells": {
+        "A": {
+          "v": "3.2.3.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Vi sinh:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 72,
+      "cells": {
+        "A": {
+          "v": "3.2.3.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Giải phẫu bệnh:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 73,
+      "cells": {
+        "A": {
+          "v": "3.2.3.5",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Xét nghiệm khác:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 74,
+      "cells": {
+        "A": {
+          "v": "3.2.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Chẩn đoán hình ảnh:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "D": {
+          "v": 0,
+          "f": "SUM(D75:D81)",
+          "t": "n",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 75,
+      "cells": {
+        "A": {
+          "v": "3.2.4.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "X-Quang:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 76,
+      "cells": {
+        "A": {
+          "v": "3.2.4.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Chụp cắt lớp vi tính/CT:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 77,
+      "cells": {
+        "A": {
+          "v": "3.2.4.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Chụp cộng hưởng từ/MRI:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 78,
+      "cells": {
+        "A": {
+          "v": "3.2.4.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Siêu âm:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 79,
+      "cells": {
+        "A": {
+          "v": "3.2.4.5",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Nội soi Tiêu hóa:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 80,
+      "cells": {
+        "A": {
+          "v": "3.2.4.6",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Nội soi Tai - Mũi - Họng:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 81,
+      "cells": {
+        "A": {
+          "v": "3.2.4.7",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Khác:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 82,
+      "cells": {
+        "A": {
+          "v": "3.2.5",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Thuốc, dịch truyển",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": 0,
+          "f": "SUM(D83:D90)",
+          "t": "n",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0.00_);_(* \\(#,##0.00\\);_(* \"-\"??_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 83,
+      "cells": {
+        "A": {
+          "v": "3.2.5.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc kháng sinh",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Ngoại trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 84,
+      "cells": {
+        "A": {
+          "v": "3.2.5.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc ung thư",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Ngoại trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 85,
+      "cells": {
+        "A": {
+          "v": "3.2.5.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc Corticoid",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Ngoại trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 86,
+      "cells": {
+        "A": {
+          "v": "3.2.5.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền dịch truyền",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Ngoại trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 87,
+      "cells": {
+        "A": {
+          "v": "3.2.5.5",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc Vitamin",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Ngoại trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 88,
+      "cells": {
+        "A": {
+          "v": "3.2.5.6",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc cổ truyền, thuốc dược liệu",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Ngoại trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 89,
+      "cells": {
+        "A": {
+          "v": "3.2.5.7",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Tiền thuốc khác",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Ngoại trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 90,
+      "cells": {
+        "A": {
+          "v": "3.2.6",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Máu",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" theo mã ở cột \"B\" tham chiếu sang cột \"AJ\"- Danh mục tham chiếu(thuốc) . Ngoại trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 91,
+      "cells": {
+        "A": {
+          "v": "3.2.7",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Phẫu thuật, thủ thuật:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": 0,
+          "t": "n",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 92,
+      "cells": {
+        "A": {
+          "v": "3.2.7.1",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Loại đặc biệt:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 93,
+      "cells": {
+        "A": {
+          "v": "3.2.7.2",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Loại I:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 94,
+      "cells": {
+        "A": {
+          "v": "3.2.7.3",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Loại II:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 95,
+      "cells": {
+        "A": {
+          "v": "3.2.7.4",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "Loại III:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 96,
+      "cells": {
+        "A": {
+          "v": "3.1.7.5",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "solid",
+            "fgColor": {
+              "rgb": "FFFFFF"
+            },
+            "bgColor": {
+              "indexed": 64
+            }
+          }
+        },
+        "B": {
+          "v": "PTTT loại khác",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số lượng ở cột \"M\" theo mã ở cột \"C\" tham chiếu sang cột \"T\"- Danh mục tham chiếu . Ngoại trú dựa vào cột mã bệnh ở cột\"AV\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;05;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "G": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 97,
+      "cells": {
+        "A": {
+          "v": "3.2.8",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Vật tư y tế",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "=file dữ liệu XML3-Số tiền ở cột \"U\" nếu cột\"E\" có mã. Ngoại trú dựa vào cột mã bệnh ở cột\"AN\" tham chiếu sang XML1 cột \"BC\" - file dữ liệu  XML1 khi mã loại là \"01;02;07\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 98,
+      "cells": {
+        "A": {
+          "v": "3.2.9",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Chi phí vận chuyển:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "F": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 99,
+      "cells": {
+        "A": {
+          "v": 4,
+          "t": "n",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tổng chi phí KCB BHYT đề nghị BHXH thanh toán (2 = 4.1 + 4.2):",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 100,
+      "cells": {
+        "A": {
+          "v": "4.1.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Chi cho KCB BHYT ngoại trú:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "= Tổng số dữ liệu tại cột \"AX\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 101,
+      "cells": {
+        "A": {
+          "v": "4.2.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Chi cho KCB BHYT nội trú:",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "v": "= Tổng số dữ liệu tại cột \"AX\" - file dữ liệu  XML1 khi mã loại là \"03;09\"",
+          "t": "s",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 102,
+      "cells": {
+        "A": {
+          "v": 5,
+          "t": "n",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tổng chi phí KCB BHYT BHXH  từ chối thanh toán  (5= 5.1 + 5.2)",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 103,
+      "cells": {
+        "A": {
+          "v": "5.1.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Đơn vị đồng ý",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 104,
+      "cells": {
+        "A": {
+          "v": "5.2.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Đơn vị không đồng ý",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "v": "Ghi rõ lý do,căn cứ pháp lý",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 105,
+      "cells": {
+        "A": {
+          "v": 6,
+          "t": "n",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Tổng chi phí KCB BHYT BHXH đã thanh toán nay đưa vào xuất toán",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 106,
+      "cells": {
+        "A": {
+          "v": "6.1.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Đơn vị đồng ý",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "t": "z",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    },
+    {
+      "row": 107,
+      "cells": {
+        "A": {
+          "v": "6.2.",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "B": {
+          "v": "Đơn vị không đồng ý",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "C": {
+          "v": "Đồng",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "D": {
+          "t": "z",
+          "z": "_(* #,##0_);_(* \\(#,##0\\);_(* \"-\"_);_(@_)",
+          "s": {
+            "patternType": "none"
+          }
+        },
+        "E": {
+          "v": "Ghi rõ lý do, căn cứ pháp lý",
+          "t": "s",
+          "z": "General",
+          "s": {
+            "patternType": "none"
+          }
+        }
+      }
+    }
+  ]
+}

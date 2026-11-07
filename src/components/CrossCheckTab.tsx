@@ -7,10 +7,12 @@ import {
   Plus,
   HelpCircle,
   FileSpreadsheet,
-  ArrowRight
+  ArrowRight,
+  Download
 } from 'lucide-react';
 import { ProcessedReportData, UnmappedItem } from '../types';
 import { formatCurrency } from '../utils/formatters';
+import { exportCrossCheckToExcel } from '../utils/excelExporter';
 
 interface CrossCheckTabProps {
   reportData: ProcessedReportData | null;
@@ -105,30 +107,41 @@ export const CrossCheckTab: React.FC<CrossCheckTabProps> = ({
             </p>
           </div>
 
-          <div className="flex items-center space-x-1.5 bg-slate-100 p-1 rounded-lg text-xs">
+          <div className="flex items-center gap-2">
+            <div className="flex items-center space-x-1.5 bg-slate-100 p-1 rounded-lg text-xs">
+              <button
+                onClick={() => setSelectedFilter('ALL')}
+                className={`px-3 py-1 rounded-md font-medium transition-all ${
+                  selectedFilter === 'ALL' ? 'bg-white text-slate-900 font-bold shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                Tất cả ({crossCheckResults.length})
+              </button>
+              <button
+                onClick={() => setSelectedFilter('MATCH')}
+                className={`px-3 py-1 rounded-md font-medium transition-all ${
+                  selectedFilter === 'MATCH' ? 'bg-white text-emerald-700 font-bold shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                Khớp ({totalMatches})
+              </button>
+              <button
+                onClick={() => setSelectedFilter('MISMATCH')}
+                className={`px-3 py-1 rounded-md font-medium transition-all ${
+                  selectedFilter === 'MISMATCH' ? 'bg-white text-amber-700 font-bold shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                Lệch ({totalMismatches})
+              </button>
+            </div>
+
             <button
-              onClick={() => setSelectedFilter('ALL')}
-              className={`px-3 py-1 rounded-md font-medium transition-all ${
-                selectedFilter === 'ALL' ? 'bg-white text-slate-900 font-bold shadow-xs' : 'text-slate-600 hover:text-slate-900'
-              }`}
+              onClick={() => exportCrossCheckToExcel(reportData)}
+              className="px-3 py-1.5 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold rounded-lg text-xs flex items-center gap-1.5 shadow-xs transition-colors"
+              title="Xuất bảng đối chiếu chéo ra file Excel"
             >
-              Tất cả ({crossCheckResults.length})
-            </button>
-            <button
-              onClick={() => setSelectedFilter('MATCH')}
-              className={`px-3 py-1 rounded-md font-medium transition-all ${
-                selectedFilter === 'MATCH' ? 'bg-white text-emerald-700 font-bold shadow-xs' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              Khớp ({totalMatches})
-            </button>
-            <button
-              onClick={() => setSelectedFilter('MISMATCH')}
-              className={`px-3 py-1 rounded-md font-medium transition-all ${
-                selectedFilter === 'MISMATCH' ? 'bg-white text-amber-700 font-bold shadow-xs' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              Lệch ({totalMismatches})
+              <Download className="w-3.5 h-3.5 text-emerald-600" />
+              <span className="hidden sm:inline">Xuất Excel Đối Chiếu</span>
             </button>
           </div>
         </div>

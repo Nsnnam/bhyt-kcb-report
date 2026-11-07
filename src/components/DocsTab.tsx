@@ -15,10 +15,23 @@ import {
 export const DocsTab: React.FC = () => {
   const versions = [
     {
-      version: 'v1.2.1',
+      version: 'v1.3.0',
       date: '07/11/2026',
       badge: 'Bản phát hành mới nhất',
       badgeColor: 'bg-emerald-100 text-emerald-800',
+      highlights: [
+        'Nâng cấp toàn diện cơ chế xuất Excel: Sử dụng trực tiếp phôi gốc của File 7 (7.Báo cáo KCB BHYT.xlsx) bảo toàn 100% định dạng chuẩn.',
+        'Bảo toàn nguyên vẹn font Times New Roman, cỡ chữ, viền kẻ bảng (borders), màu nền, căn lề và độ rộng từng cột chuẩn của Sở Y tế Phú Thọ.',
+        'Giữ nguyên 100% các ô tiêu đề gộp (Merge A1:E1, A2:E2, A3:E3) và bộ lọc AutoFilter từ hàng số 5 đến hàng 107.',
+        'Công thức Excel động (SUM, phép chia BQ, tỷ lệ %) được bảo toàn và tự động tính toán lại khi người dùng mở tệp trên Excel.',
+        'Tách riêng tính năng "Xuất Excel Bảng đối chiếu chéo XML vs 79/80a" với bảng biểu và định dạng thống kê trực quan.'
+      ]
+    },
+    {
+      version: 'v1.2.1',
+      date: '07/11/2026',
+      badge: 'Bản ổn định',
+      badgeColor: 'bg-blue-100 text-blue-800',
       highlights: [
         'Khắc phục triệt để lỗi "Bad compressed size: 0 != 350" khi tải tệp dữ liệu lớn (XML3 15MB, gần 70.000 dòng).',
         'Tối ưu cơ chế đọc tệp Excel: xóa bỏ thao tác cắt nhị phân (slice) gây hỏng cấu trúc nén ZIP của SheetJS.',

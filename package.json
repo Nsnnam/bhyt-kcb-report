@@ -1,7 +1,7 @@
 {
   "name": "bhyt-kcb-report",
   "private": true,
-  "version": "1.2.1",
+  "version": "1.3.0",
   "homepage": "https://nsnnam.github.io/bhyt-kcb-report",
   "type": "module",
   "scripts": {
@@ -13,8 +13,10 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@types/jszip": "^3.4.0",
     "gh-pages": "^6.3.0",
     "idb-keyval": "^6.3.0",
+    "jszip": "^3.10.2",
     "lucide-react": "^1.70.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",

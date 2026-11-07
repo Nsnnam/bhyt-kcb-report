@@ -1,6 +1,6 @@
 # BHYT Analytics Portal - Hệ Thống Tổng Hợp Báo Cáo KCB BHYT
 
-[![Version](https://img.shields.io/badge/version-1.2.1-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
+[![Version](https://img.shields.io/badge/version-1.3.0-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
 [![Deployment](https://img.shields.io/badge/deploy-GitHub%20Pages-success.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Web%20Client-teal.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
@@ -125,6 +125,13 @@ bhyt-kcb-report/
 ---
 
 ## 📜 Lịch Sử Phiên Bản Tăng Dần (Semantic Versioning)
+
+### **v1.3.0 (07/11/2026) - Chuẩn Hóa Phôi Gốc Báo Cáo File 7 (Sở Y Tế Phú Thọ)**
+- **Nâng cấp cốt lõi:** Xuất file Excel sử dụng trực tiếp cấu trúc nhị phân của phôi gốc `7.Báo cáo KCB BHYT.xlsx` thay vì sinh bảng thô không định dạng.
+- **Bảo toàn 100% giao diện & thẩm mỹ:** Giữ nguyên vẹn font chữ **Times New Roman**, cỡ chữ phân cấp (14, 13, 11), viền kẻ bảng (borders) đôi/đơn chuẩn hành chính, căn lề và độ rộng từng cột chuẩn của Sở Y tế.
+- **Bảo toàn tiêu đề & bộ lọc:** Giữ nguyên các ô tiêu đề gộp (Merge `A1:E1`, `A2:E2`, `A3:E3`), căn giữa chuẩn thể thức văn bản và bộ lọc tự động `AutoFilter` từ hàng 5 đến hàng 107.
+- **Công thức Excel động:** Giữ nguyên các công thức tính toán Excel (`=D8+D17`, `=D9/D8`, `=D8/D7`, `=D25+D26`, `=SUM(...)`...), tự động tính toán lại khi người dùng mở tệp trên Microsoft Excel.
+- **Tính năng mở rộng:** Tách riêng nút xuất "Bảng đối chiếu chéo XML vs 79/80a" với bảng biểu và định dạng thống kê trực quan.
 
 ### **v1.2.1 (07/11/2026) - Bản vá khẩn cấp & Tối ưu hóa tải tệp lớn**
 - **Sửa lỗi:** Khắc phục triệt để lỗi `Error: Bad compressed size: 0 != 350` khi tải tệp dữ liệu XML3 lớn (~15MB, gần 70.000 dòng).

@@ -137,9 +137,10 @@ export const ReportTab: React.FC<ReportTabProps> = ({
           <button
             onClick={onExportExcel}
             className="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg transition-all shadow-sm flex items-center gap-1.5 active:scale-95"
+            title="Xuất file Excel bảo toàn 100% định dạng phôi mẫu File 7 (Times New Roman, viền kẻ bảng, công thức động)"
           >
             <Download className="w-4 h-4" />
-            <span>Xuất Excel File 7</span>
+            <span>Xuất Excel File 7 (Chuẩn mẫu SYT)</span>
           </button>
         </div>
       </div>

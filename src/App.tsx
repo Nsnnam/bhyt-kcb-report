@@ -262,13 +262,18 @@ export const App: React.FC = () => {
     }, 250);
   };
 
-  // Export Excel action
-  const handleExportExcel = () => {
+  // Export Excel action (100% exact File 7 standard format)
+  const handleExportExcel = async () => {
     if (!reportData) {
       alert('Chưa có dữ liệu báo cáo để xuất file!');
       return;
     }
-    exportReportToExcel(reportData);
+    try {
+      await exportReportToExcel(reportData);
+    } catch (err) {
+      console.error('Lỗi xuất Excel chuẩn mẫu:', err);
+      alert('Không thể xuất tệp Excel chuẩn mẫu: ' + String(err));
+    }
   };
 
   // Update drugs library and recalculate if data exists
