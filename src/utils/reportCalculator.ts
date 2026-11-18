@@ -24,10 +24,21 @@ export function calculateReport(
   config: ReportConfig
 ): ProcessedReportData {
   // Build lookup maps
-  const drugMap = new Map<string, string>();
+  const drugCompositeMap = new Map<string, string>();
+  const drugFallbackMap = new Map<string, string>();
   for (const d of drugCatalog) {
     if (d.ma_thuoc) {
-      drugMap.set(d.ma_thuoc.trim().toUpperCase(), d.nhom_bao_cao || 'Tiền thuốc khác');
+      const code = d.ma_thuoc.trim().toUpperCase();
+      const nhom = d.nhom_bao_cao || 'Tiền thuốc khác';
+      if (d.ma_duong_dung) {
+        drugCompositeMap.set(`${code}__${d.ma_duong_dung.trim().toUpperCase()}`, nhom);
+      }
+      if (d.duong_dung) {
+        drugCompositeMap.set(`${code}__${d.duong_dung.trim().toUpperCase()}`, nhom);
+      }
+      if (!drugFallbackMap.has(code)) {
+        drugFallbackMap.set(code, nhom);
+      }
     }
   }
 
@@ -129,8 +140,15 @@ export function calculateReport(
     if (!isNoi && !isNgoai) continue;
 
     const drugCode = r.ma_thuoc.trim().toUpperCase();
+    const routeCode = (r.ma_duong_dung || r.duong_dung || '').trim().toUpperCase();
     const amount = r.thanh_tien_bv || 0;
-    const cat = drugMap.get(drugCode);
+
+    let cat: string | undefined;
+    if (routeCode && drugCompositeMap.has(`${drugCode}__${routeCode}`)) {
+      cat = drugCompositeMap.get(`${drugCode}__${routeCode}`);
+    } else if (drugFallbackMap.has(drugCode)) {
+      cat = drugFallbackMap.get(drugCode);
+    }
 
     if (cat) {
       if (isNoi) drugCostNoi[cat] = (drugCostNoi[cat] || 0) + amount;
@@ -141,10 +159,11 @@ export function calculateReport(
       if (isNoi) drugCostNoi[fallbackCat] = (drugCostNoi[fallbackCat] || 0) + amount;
       else if (isNgoai) drugCostNgoai[fallbackCat] = (drugCostNgoai[fallbackCat] || 0) + amount;
 
-      const cur = unmappedDrugMap.get(drugCode) || { count: 0, totalAmount: 0 };
+      const unmappedKey = routeCode ? `${drugCode} [ĐD: ${routeCode}]` : drugCode;
+      const cur = unmappedDrugMap.get(unmappedKey) || { count: 0, totalAmount: 0 };
       cur.count += 1;
       cur.totalAmount += amount;
-      unmappedDrugMap.set(drugCode, cur);
+      unmappedDrugMap.set(unmappedKey, cur);
     }
   }
 

@@ -3,7 +3,7 @@ import { DrugItem, DVKTItem, ProcessedReportData, ReportConfig } from '../types'
 import defaultDrugs from '../data/thuoc_default.json';
 import defaultDVKT from '../data/dvkt_default.json';
 
-const DRUGS_KEY = 'bhyt_catalog_drugs';
+const DRUGS_KEY = 'bhyt_catalog_drugs_v2';
 const DVKT_KEY = 'bhyt_catalog_dvkt';
 const REPORT_DATA_KEY = 'bhyt_last_report_data';
 const REPORT_CONFIG_KEY = 'bhyt_report_config';
@@ -11,7 +11,7 @@ const REPORT_CONFIG_KEY = 'bhyt_report_config';
 export async function getDrugsCatalog(): Promise<DrugItem[]> {
   try {
     const saved = await get<DrugItem[]>(DRUGS_KEY);
-    if (saved && Array.isArray(saved) && saved.length > 0) {
+    if (saved && Array.isArray(saved) && saved.length > 0 && saved.some(d => d.ma_duong_dung)) {
       return saved;
     }
   } catch (err) {
@@ -42,6 +42,7 @@ export async function saveDVKTCatalog(items: DVKTItem[]): Promise<void> {
 
 export async function resetAllCatalogs(): Promise<{ drugs: DrugItem[]; dvkt: DVKTItem[] }> {
   await del(DRUGS_KEY);
+  await del('bhyt_catalog_drugs');
   await del(DVKT_KEY);
   return {
     drugs: (defaultDrugs as unknown) as DrugItem[],

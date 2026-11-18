@@ -13,6 +13,8 @@ export interface ParsedXML1Row {
 export interface ParsedXML2Row {
   ma_lk: string;
   ma_thuoc: string;
+  ma_duong_dung?: string;
+  duong_dung?: string;
   so_luong: number;
   thanh_tien_bv: number;
   thanh_tien_bh: number;
@@ -139,9 +141,21 @@ export function parseXML2Sheet(sheet: XLSX.WorkSheet): ParsedXML2Row[] {
     const ma_lk = String(r['MA_LK'] || '').trim();
     if (!ma_lk || ma_lk.startsWith('=')) continue;
     
+    // In XML2 standard, DUONG_DUNG column contains route code (e.g. 1.01, 2.10, 2.15).
+    // Some formats might also have MA_DUONG_DUNG. We check both.
+    const routeVal = String(
+      r['MA_DUONG_DUNG'] ||
+      r['DUONG_DUNG'] ||
+      r['MA_DUONGDUNG'] ||
+      r['DUONGDUNG'] ||
+      ''
+    ).trim();
+
     result.push({
       ma_lk,
       ma_thuoc: String(r['MA_THUOC'] || '').trim(),
+      ma_duong_dung: routeVal,
+      duong_dung: routeVal,
       so_luong: safeFloat(r['SO_LUONG']),
       thanh_tien_bv: safeFloat(r['THANH_TIEN_BV']),
       thanh_tien_bh: safeFloat(r['THANH_TIEN_BH']),
@@ -205,19 +219,20 @@ export function parseDrugCatalogSheet(sheet: XLSX.WorkSheet): DrugItem[] {
   if (rows.length < 2) return [];
 
   const headers = (rows[0] as unknown[]).map(h => String(h || '').trim());
-  const maThuocIdx = headers.findIndex(h => h.toUpperCase() === 'MA_THUOC');
-  const hoatChatIdx = headers.findIndex(h => h.toUpperCase() === 'TEN_HOAT_CHAT');
-  const tenThuocIdx = headers.findIndex(h => h.toUpperCase() === 'TEN_THUOC');
-  const nhomBvIdx = headers.findIndex(h => h.toUpperCase() === 'NHOM_THUOC');
-  const dvtIdx = headers.findIndex(h => h.toUpperCase() === 'DON_VI_TINH');
-  const hamLuongIdx = headers.findIndex(h => h.toUpperCase() === 'HAM_LUONG');
-  const duongDungIdx = headers.findIndex(h => h.toUpperCase() === 'DUONG_DUNG');
-  const sdkIdx = headers.findIndex(h => h.toUpperCase() === 'SO_DANG_KY');
-  const giaBhIdx = headers.findIndex(h => h.toUpperCase() === 'DON_GIA_BH');
+  const maThuocIdx = headers.findIndex(h => h.toUpperCase() === 'MA_THUOC' || h.toUpperCase() === 'MÃ THUỐC');
+  const hoatChatIdx = headers.findIndex(h => h.toUpperCase() === 'TEN_HOAT_CHAT' || h.toUpperCase().includes('HOẠT CHẤT'));
+  const tenThuocIdx = headers.findIndex(h => h.toUpperCase() === 'TEN_THUOC' || h.toUpperCase().includes('TÊN THUỐC'));
+  const nhomBvIdx = headers.findIndex(h => h.toUpperCase() === 'NHOM_THUOC' || h.toUpperCase() === 'NHÓM THUỐC');
+  const dvtIdx = headers.findIndex(h => h.toUpperCase() === 'DON_VI_TINH' || h.toUpperCase().includes('ĐƠN VỊ TÍNH') || h.toUpperCase() === 'ĐVT');
+  const hamLuongIdx = headers.findIndex(h => h.toUpperCase() === 'HAM_LUONG' || h.toUpperCase().includes('HÀM LƯỢNG'));
+  const duongDungIdx = headers.findIndex(h => h.toUpperCase() === 'DUONG_DUNG' || h.toUpperCase() === 'ĐƯỜNG DÙNG');
+  const maDuongDungIdx = headers.findIndex(h => h.toUpperCase() === 'MA_DUONG_DUNG' || h.toUpperCase().includes('MÃ ĐƯỜNG DÙNG') || h.toUpperCase() === 'MÃ ĐD');
+  const sdkIdx = headers.findIndex(h => h.toUpperCase() === 'SO_DANG_KY' || h.toUpperCase().includes('SỐ ĐĂNG KÝ') || h.toUpperCase() === 'SĐK');
+  const giaBhIdx = headers.findIndex(h => h.toUpperCase() === 'DON_GIA_BH' || h.toUpperCase().includes('ĐƠN GIÁ BH'));
   
   // Col AJ is usually index 35 or header 'Nhóm thuốc' / 'nhom_bao_cao'
   let nhomBcIdx = headers.findIndex(h => h.toLowerCase().includes('nhóm thuốc') || h.toLowerCase().includes('nhom_bao_cao'));
-  if (nhomBcIdx === -1 && headers.length > 35) {
+  if (headers.length > 35 && (nhomBcIdx === -1 || nhomBcIdx === nhomBvIdx)) {
     nhomBcIdx = 35; // Column AJ
   }
 
@@ -228,14 +243,24 @@ export function parseDrugCatalogSheet(sheet: XLSX.WorkSheet): DrugItem[] {
     const code = String(row[maThuocIdx !== -1 ? maThuocIdx : 1] || '').trim();
     if (!code) continue;
 
+    let routeCode = '';
+    if (maDuongDungIdx !== -1) {
+      routeCode = String(row[maDuongDungIdx] || '').trim();
+    } else if (row.length > 8 && String(row[8] || '').trim()) {
+      routeCode = String(row[8] || '').trim();
+    } else if (row.length > 36 && String(row[36] || '').trim()) {
+      routeCode = String(row[36] || '').trim();
+    }
+
     result.push({
       ma_thuoc: code,
       ten_hoat_chat: hoatChatIdx !== -1 ? String(row[hoatChatIdx] || '').trim() : '',
       ten_thuoc: tenThuocIdx !== -1 ? String(row[tenThuocIdx] || '').trim() : '',
-      nhom_bv: nhomBvIdx !== -1 ? String(row[nhomBvIdx] || '').trim() : '',
+      nhom_bv: nhomBvIdx !== -1 && nhomBvIdx !== nhomBcIdx ? String(row[nhomBvIdx] || '').trim() : '',
       don_vi_tinh: dvtIdx !== -1 ? String(row[dvtIdx] || '').trim() : '',
       ham_luong: hamLuongIdx !== -1 ? String(row[hamLuongIdx] || '').trim() : '',
       duong_dung: duongDungIdx !== -1 ? String(row[duongDungIdx] || '').trim() : '',
+      ma_duong_dung: routeCode,
       so_dang_ky: sdkIdx !== -1 ? String(row[sdkIdx] || '').trim() : '',
       don_gia_bh: giaBhIdx !== -1 ? safeFloat(row[giaBhIdx]) : 0,
       nhom_bao_cao: nhomBcIdx !== -1 ? String(row[nhomBcIdx] || '').trim() : 'Tiền thuốc khác'

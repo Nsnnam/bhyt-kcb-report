@@ -8,7 +8,6 @@ import {
   Download,
   Upload,
   RotateCcw,
-  Check,
   X,
   Filter
 } from 'lucide-react';
@@ -39,10 +38,15 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
     ma_thuoc: '',
     ten_hoat_chat: '',
     ten_thuoc: '',
+    duong_dung: '',
+    ma_duong_dung: '',
     nhom_bao_cao: 'Tiền thuốc khác',
     don_vi_tinh: '',
     ham_luong: ''
   });
+
+  const getDrugKey = (d: Partial<DrugItem>) =>
+    `${(d.ma_thuoc || '').trim().toUpperCase()}__${(d.ma_duong_dung || '').trim().toUpperCase()}`;
 
   const filteredDrugs = drugs.filter((d) => {
     const matchGroup = selectedGroup === 'ALL' || d.nhom_bao_cao === selectedGroup;
@@ -52,7 +56,9 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
     return (
       d.ma_thuoc.toLowerCase().includes(term) ||
       (d.ten_hoat_chat && d.ten_hoat_chat.toLowerCase().includes(term)) ||
-      (d.ten_thuoc && d.ten_thuoc.toLowerCase().includes(term))
+      (d.ten_thuoc && d.ten_thuoc.toLowerCase().includes(term)) ||
+      (d.duong_dung && d.duong_dung.toLowerCase().includes(term)) ||
+      (d.ma_duong_dung && d.ma_duong_dung.toLowerCase().includes(term))
     );
   });
 
@@ -65,6 +71,8 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
       ma_thuoc: '',
       ten_hoat_chat: '',
       ten_thuoc: '',
+      duong_dung: '',
+      ma_duong_dung: '',
       nhom_bao_cao: 'Tiền thuốc khác',
       don_vi_tinh: '',
       ham_luong: ''
@@ -78,9 +86,11 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
     setIsModalOpen(true);
   };
 
-  const handleDelete = async (ma_thuoc: string) => {
-    if (confirm(`Bạn có chắc muốn xóa mã thuốc "${ma_thuoc}" khỏi danh mục?`)) {
-      const next = drugs.filter((d) => d.ma_thuoc !== ma_thuoc);
+  const handleDelete = async (target: DrugItem) => {
+    const desc = `${target.ma_thuoc}${target.ma_duong_dung ? ` (Mã ĐD: ${target.ma_duong_dung})` : ''} - ${target.ten_thuoc || ''}`;
+    if (confirm(`Bạn có chắc muốn xóa thuốc "${desc}" khỏi danh mục?`)) {
+      const targetKey = getDrugKey(target);
+      const next = drugs.filter((d) => getDrugKey(d) !== targetKey);
       await onSaveDrugs(next);
     }
   };
@@ -93,16 +103,30 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
     }
 
     const code = formValues.ma_thuoc.trim().toUpperCase();
+    const maDD = (formValues.ma_duong_dung || '').trim();
+    const newKey = `${code}__${maDD.toUpperCase()}`;
+
     let next: DrugItem[];
 
     if (editingItem) {
-      next = drugs.map((d) => (d.ma_thuoc === editingItem.ma_thuoc ? ({ ...d, ...formValues, ma_thuoc: code } as DrugItem) : d));
+      const editKey = getDrugKey(editingItem);
+      next = drugs.map((d) =>
+        getDrugKey(d) === editKey
+          ? ({ ...d, ...formValues, ma_thuoc: code, ma_duong_dung: maDD } as DrugItem)
+          : d
+      );
     } else {
-      if (drugs.some((d) => d.ma_thuoc.toUpperCase() === code)) {
-        alert('Mã thuốc này đã tồn tại trong danh mục!');
+      if (drugs.some((d) => getDrugKey(d) === newKey)) {
+        alert(`Mã thuốc "${code}" kết hợp Mã đường dùng "${maDD}" đã tồn tại trong danh mục!`);
         return;
       }
-      next = [formValues as DrugItem, ...drugs];
+      const newItem: DrugItem = {
+        ...formValues,
+        ma_thuoc: code,
+        ma_duong_dung: maDD,
+        nhom_bao_cao: formValues.nhom_bao_cao || 'Tiền thuốc khác'
+      } as DrugItem;
+      next = [newItem, ...drugs];
     }
 
     await onSaveDrugs(next);
@@ -111,12 +135,24 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
 
   const handleExportExcel = () => {
     const wsData = [
-      ['STT', 'Mã thuốc', 'Tên hoạt chất', 'Tên thuốc', 'ĐVT', 'Hàm lượng', 'Nhóm thuốc báo cáo'],
+      [
+        'STT',
+        'Mã thuốc',
+        'Tên hoạt chất',
+        'Tên thuốc',
+        'Đường dùng',
+        'Mã đường dùng',
+        'ĐVT',
+        'Hàm lượng',
+        'Nhóm thuốc báo cáo'
+      ],
       ...drugs.map((d, i) => [
         i + 1,
         d.ma_thuoc,
         d.ten_hoat_chat || '',
         d.ten_thuoc || '',
+        d.duong_dung || '',
+        d.ma_duong_dung || '',
         d.don_vi_tinh || '',
         d.ham_luong || '',
         d.nhom_bao_cao
@@ -146,6 +182,8 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
         const codeIdx = headers.findIndex((h: string) => h.includes('mã thuốc') || h.includes('ma_thuoc'));
         const nameIdx = headers.findIndex((h: string) => h.includes('tên thuốc') || h.includes('ten_thuoc'));
         const hcIdx = headers.findIndex((h: string) => h.includes('hoạt chất') || h.includes('ten_hoat_chat'));
+        const ddIdx = headers.findIndex((h: string) => h === 'đường dùng' || h === 'duong_dung');
+        const maDdIdx = headers.findIndex((h: string) => h.includes('mã đường dùng') || h.includes('ma_duong_dung') || h.includes('mã đd'));
         const groupIdx = headers.findIndex((h: string) => h.includes('nhóm thuốc') || h.includes('nhom_bao_cao'));
 
         for (let i = 1; i < json.length; i++) {
@@ -157,6 +195,8 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
             ma_thuoc: code,
             ten_thuoc: nameIdx !== -1 ? String(row[nameIdx] || '').trim() : '',
             ten_hoat_chat: hcIdx !== -1 ? String(row[hcIdx] || '').trim() : '',
+            duong_dung: ddIdx !== -1 ? String(row[ddIdx] || '').trim() : '',
+            ma_duong_dung: maDdIdx !== -1 ? String(row[maDdIdx] || '').trim() : '',
             nhom_bao_cao: groupIdx !== -1 ? String(row[groupIdx] || '').trim() : 'Tiền thuốc khác'
           });
         }
@@ -189,7 +229,7 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
               </span>
             </div>
             <p className="text-xs text-slate-500 mt-1">
-              Phân loại thuốc BHYT theo các nhóm báo cáo: Kháng sinh, Ung thư, Corticoid, Dịch truyền, Vitamin, YHCT, Thuốc khác, Máu.
+              Phân loại thuốc BHYT theo Mã thuốc & Mã đường dùng vào các nhóm báo cáo: Kháng sinh, Ung thư, Corticoid, Dịch truyền, Vitamin, Cổ truyền, Thuốc khác, Máu.
             </p>
           </div>
 
@@ -229,7 +269,7 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
 
         {/* Filter and Search Bar */}
         <div className="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="relative w-full sm:w-80">
+          <div className="relative w-full sm:w-96">
             <Search className="w-4 h-4 text-slate-400 absolute left-3 top-2.5" />
             <input
               type="text"
@@ -238,7 +278,7 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
                 setSearchTerm(e.target.value);
                 setCurrentPage(1);
               }}
-              placeholder="Tìm theo Mã thuốc, Tên thuốc, Hoạt chất..."
+              placeholder="Tìm theo Mã thuốc, Mã ĐD, Tên thuốc, Hoạt chất..."
               className="w-full pl-9 pr-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
           </div>
@@ -272,7 +312,9 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
                 <th className="py-2.5 px-3 w-28 font-mono">Mã thuốc</th>
                 <th className="py-2.5 px-4">Tên thuốc</th>
                 <th className="py-2.5 px-4">Hoạt chất</th>
-                <th className="py-2.5 px-3 w-20">ĐVT</th>
+                <th className="py-2.5 px-3 w-24">Đường dùng</th>
+                <th className="py-2.5 px-3 w-20 text-center font-mono">Mã ĐD</th>
+                <th className="py-2.5 px-3 w-16">ĐVT</th>
                 <th className="py-2.5 px-4">Nhóm báo cáo</th>
                 <th className="py-2.5 px-3 w-20 text-center">Thao tác</th>
               </tr>
@@ -280,12 +322,17 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
             <tbody className="divide-y divide-slate-100">
               {paginatedDrugs.map((d, index) => {
                 const globalIndex = (currentPage - 1) * pageSize + index + 1;
+                const rowKey = `${d.ma_thuoc}__${d.ma_duong_dung || ''}__${globalIndex}`;
                 return (
-                  <tr key={d.ma_thuoc} className="hover:bg-slate-50/70 transition-colors">
+                  <tr key={rowKey} className="hover:bg-slate-50/70 transition-colors">
                     <td className="py-2 px-3 text-center text-slate-500">{globalIndex}</td>
                     <td className="py-2 px-3 font-mono font-semibold text-brand-700">{d.ma_thuoc}</td>
                     <td className="py-2 px-4 font-medium text-slate-900">{d.ten_thuoc || '-'}</td>
                     <td className="py-2 px-4 text-slate-600">{d.ten_hoat_chat || '-'}</td>
+                    <td className="py-2 px-3 text-slate-600">{d.duong_dung || '-'}</td>
+                    <td className="py-2 px-3 text-center font-mono font-semibold text-indigo-700 bg-indigo-50/40 rounded">
+                      {d.ma_duong_dung || '-'}
+                    </td>
                     <td className="py-2 px-3 text-slate-500">{d.don_vi_tinh || '-'}</td>
                     <td className="py-2 px-4">
                       <span className="inline-block px-2 py-0.5 rounded-full text-[11px] font-semibold bg-rose-50 text-rose-700 border border-rose-200">
@@ -302,7 +349,7 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
                           <Edit className="w-3.5 h-3.5" />
                         </button>
                         <button
-                          onClick={() => handleDelete(d.ma_thuoc)}
+                          onClick={() => handleDelete(d)}
                           className="p-1 text-slate-400 hover:text-rose-600 transition-colors"
                           title="Xóa"
                         >
@@ -315,7 +362,7 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
               })}
               {paginatedDrugs.length === 0 && (
                 <tr>
-                  <td colSpan={7} className="py-8 text-center text-slate-500">
+                  <td colSpan={9} className="py-8 text-center text-slate-500">
                     Không tìm thấy thuốc nào khớp với điều kiện tìm kiếm.
                   </td>
                 </tr>
@@ -369,27 +416,51 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
             </div>
 
             <form onSubmit={handleSaveModal} className="mt-4 space-y-3.5 text-xs">
-              <div>
-                <label className="block text-slate-700 font-semibold mb-1">Mã thuốc (MA_THUOC): *</label>
-                <input
-                  type="text"
-                  required
-                  value={formValues.ma_thuoc || ''}
-                  onChange={(e) => setFormValues({ ...formValues, ma_thuoc: e.target.value })}
-                  placeholder="Ví dụ: 40.1021 hoặc 2.7.KTNAT"
-                  className="w-full p-2 bg-slate-50 border border-slate-200 rounded-lg font-mono focus:outline-none focus:ring-2 focus:ring-brand-500"
-                />
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-slate-700 font-semibold mb-1">Mã thuốc (MA_THUOC): *</label>
+                  <input
+                    type="text"
+                    required
+                    value={formValues.ma_thuoc || ''}
+                    onChange={(e) => setFormValues({ ...formValues, ma_thuoc: e.target.value })}
+                    placeholder="Ví dụ: 40.451"
+                    className="w-full p-2 bg-slate-50 border border-slate-200 rounded-lg font-mono focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-slate-700 font-semibold mb-1">Mã đường dùng (MA_DUONG_DUNG):</label>
+                  <input
+                    type="text"
+                    value={formValues.ma_duong_dung || ''}
+                    onChange={(e) => setFormValues({ ...formValues, ma_duong_dung: e.target.value })}
+                    placeholder="Ví dụ: 2.10, 1.01, 2.15"
+                    className="w-full p-2 bg-slate-50 border border-slate-200 rounded-lg font-mono focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  />
+                </div>
               </div>
 
-              <div>
-                <label className="block text-slate-700 font-semibold mb-1">Tên thuốc:</label>
-                <input
-                  type="text"
-                  value={formValues.ten_thuoc || ''}
-                  onChange={(e) => setFormValues({ ...formValues, ten_thuoc: e.target.value })}
-                  placeholder="Ví dụ: Natri clorid 0,9%"
-                  className="w-full p-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500"
-                />
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-slate-700 font-semibold mb-1">Tên thuốc:</label>
+                  <input
+                    type="text"
+                    value={formValues.ten_thuoc || ''}
+                    onChange={(e) => setFormValues({ ...formValues, ten_thuoc: e.target.value })}
+                    placeholder="Ví dụ: Toxaxine 500mg Inj"
+                    className="w-full p-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-slate-700 font-semibold mb-1">Đường dùng:</label>
+                  <input
+                    type="text"
+                    value={formValues.duong_dung || ''}
+                    onChange={(e) => setFormValues({ ...formValues, duong_dung: e.target.value })}
+                    placeholder="Ví dụ: Tiêm, Uống..."
+                    className="w-full p-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  />
+                </div>
               </div>
 
               <div>
@@ -398,7 +469,7 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
                   type="text"
                   value={formValues.ten_hoat_chat || ''}
                   onChange={(e) => setFormValues({ ...formValues, ten_hoat_chat: e.target.value })}
-                  placeholder="Ví dụ: Trimetazidin"
+                  placeholder="Ví dụ: Tranexamic acid"
                   className="w-full p-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500"
                 />
               </div>
@@ -410,7 +481,7 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
                     type="text"
                     value={formValues.don_vi_tinh || ''}
                     onChange={(e) => setFormValues({ ...formValues, don_vi_tinh: e.target.value })}
-                    placeholder="Viên, Lọ, Túi..."
+                    placeholder="Viên, Ống, Lọ..."
                     className="w-full p-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500"
                   />
                 </div>
@@ -420,7 +491,7 @@ export const DrugCatalogTab: React.FC<DrugCatalogTabProps> = ({
                     type="text"
                     value={formValues.ham_luong || ''}
                     onChange={(e) => setFormValues({ ...formValues, ham_luong: e.target.value })}
-                    placeholder="Ví dụ: 20mg"
+                    placeholder="Ví dụ: 500mg/5ml"
                     className="w-full p-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500"
                   />
                 </div>

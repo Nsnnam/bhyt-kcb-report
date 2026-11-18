@@ -7,6 +7,7 @@ export interface DrugItem {
   don_vi_tinh?: string;
   ham_luong?: string;
   duong_dung?: string;
+  ma_duong_dung?: string;
   so_dang_ky?: string;
   don_gia_bh?: number;
   nhom_bao_cao: string; // e.g. Tiền thuốc kháng sinh, Tiền thuốc ung thư, etc.

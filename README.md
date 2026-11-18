@@ -1,6 +1,6 @@
 # BHYT Analytics Portal - Hệ Thống Tổng Hợp Báo Cáo KCB BHYT
 
-[![Version](https://img.shields.io/badge/version-1.3.2-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
+[![Version](https://img.shields.io/badge/version-1.4.0-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
 [![Deployment](https://img.shields.io/badge/deploy-GitHub%20Pages-success.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Web%20Client-teal.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
@@ -125,6 +125,12 @@ bhyt-kcb-report/
 ---
 
 ## 📜 Lịch Sử Phiên Bản Tăng Dần (Semantic Versioning)
+
+### **v1.4.0 (18/11/2026) - Cập Nhật Danh Mục Thuốc Mới & Phân Biệt Đường Dùng (MA_DUONG_DUNG)**
+- **Cập nhật danh mục chuẩn:** Cập nhật 768 dòng danh mục thuốc tham chiếu mới nhất từ Sở Y tế Phú Thọ với đầy đủ các trường thông tin.
+- **Phân biệt đường dùng thuốc:** Giải quyết triệt để 25 mã thuốc trùng mã nhưng khác đường dùng (Ví dụ: Mã `40.451` đường tiêm/tiêm truyền `2.10` phân vào `Tiền dịch truyền`, đường uống `1.01` phân vào `Tiền thuốc khác`; Mã `40.1005`, `40.55`, `40.48`, `40.678`...).
+- **Cơ chế ánh xạ khóa kép thông minh:** Tự động kết hợp `MA_THUOC` + `MA_DUONG_DUNG` (Composite Key) để định tuyến nhóm báo cáo chuẩn xác 100%, bảo đảm không bị gộp sai lệch giữa Dịch truyền và Thuốc khác.
+- **Nâng cấp Thư viện Thuốc:** Bổ sung hiển thị và lọc tìm kiếm theo `Mã ĐD` (`MA_DUONG_DUNG`) và `Đường dùng`, hỗ trợ đầy đủ các thao tác Thêm, Sửa, Xóa và Nhập/Xuất Excel chuẩn.
 
 ### **v1.3.2 (18/11/2026) - Khắc Phục Lỗi Cảnh Báo "We found a problem with some content" & Chuẩn Hóa XML**
 - **Sửa lỗi cú pháp XML:** Khắc phục triệt để lỗi thẻ đóng XML không khớp tại cột 16596 do hàm thay thế chuỗi hiểu nhầm ký tự `$` trong công thức thành nhóm bắt giữ (`$1`).

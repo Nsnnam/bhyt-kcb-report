@@ -15,10 +15,22 @@ import {
 export const DocsTab: React.FC = () => {
   const versions = [
     {
-      version: 'v1.3.2',
+      version: 'v1.4.0',
       date: '18/11/2026',
       badge: 'Bản phát hành mới nhất',
       badgeColor: 'bg-emerald-100 text-emerald-800',
+      highlights: [
+        'Cập nhật toàn bộ thư viện danh mục thuốc tham chiếu mới nhất (768 thuốc) từ Sở Y tế.',
+        'Phân biệt chính xác đường dùng thuốc (MA_DUONG_DUNG): Tách biệt hoàn toàn các thuốc có cùng mã thuốc nhưng khác đường dùng (Ví dụ: 40.451 tiêm truyền vào "Tiền dịch truyền", uống vào "Tiền thuốc khác"; 40.1005; 40.55;...).',
+        'Cơ chế ánh xạ khóa kép thông minh (Composite Key: MA_THUOC + MA_DUONG_DUNG): Tự động so khớp chính xác 100%, có cơ chế dự phòng theo mã thuốc đơn lẻ.',
+        'Nâng cấp giao diện Thư viện Thuốc: Bổ sung hiển thị cột "Đường dùng" và "Mã ĐD", hỗ trợ tìm kiếm, thêm mới, sửa, xóa, nhập/xuất Excel đầy đủ.'
+      ]
+    },
+    {
+      version: 'v1.3.2',
+      date: '18/11/2026',
+      badge: 'Bản ổn định',
+      badgeColor: 'bg-blue-100 text-blue-800',
       highlights: [
         'Khắc phục triệt để lỗi "We found a problem with some content" khi mở file Excel trên Microsoft Excel.',
         'Xử lý lỗi ký tự đặc biệt ($): Sử dụng hàm thay thế an toàn ngăn ngừa JavaScript hiểu nhầm ký tự $ trong công thức thành nhóm trích xuất ($1), loại bỏ hoàn toàn lỗi thẻ đóng XML lệch vị trí.',
@@ -195,8 +207,9 @@ export const DocsTab: React.FC = () => {
 
           <div className="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
             <strong className="text-slate-900 block mb-1">3. Ánh xạ Thuốc & Dịch truyền (Từ XML2):</strong>
-            Mã thuốc ở cột <code>MA_THUOC</code> (cột C) của XML2 được tham chiếu sang Thư viện Thuốc (File số 5) để lấy nhóm báo cáo ở Cột AJ:
+            Mã thuốc ở cột <code>MA_THUOC</code> kết hợp mã đường dùng ở cột <code>DUONG_DUNG</code> (hoặc <code>MA_DUONG_DUNG</code>) của XML2 được tham chiếu sang Thư viện Thuốc (File số 5) để lấy nhóm báo cáo ở Cột AJ:
             <ul className="list-disc list-inside mt-1 space-y-0.5 text-slate-600 pl-2">
+              <li><strong>Phân biệt đường dùng:</strong> Với các thuốc có cùng mã thuốc nhưng khác đường dùng (như 40.451 tiêm vs uống), hệ thống tự động tách chính xác vào nhóm Tiền dịch truyền hoặc Tiền thuốc khác.</li>
               <li>Phân nhóm tự động: Kháng sinh, Ung thư, Corticoid, Dịch truyền, Vitamin, Thuốc cổ truyền/dược liệu, Thuốc khác.</li>
               <li>Nhóm "Máu" được phân bổ độc lập vào Mục 3.1.6 (Nội trú) và Mục 3.2.6 (Ngoại trú).</li>
             </ul>
