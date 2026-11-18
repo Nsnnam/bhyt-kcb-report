@@ -1,6 +1,6 @@
 # BHYT Analytics Portal - Hệ Thống Tổng Hợp Báo Cáo KCB BHYT
 
-[![Version](https://img.shields.io/badge/version-1.3.0-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
+[![Version](https://img.shields.io/badge/version-1.3.1-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
 [![Deployment](https://img.shields.io/badge/deploy-GitHub%20Pages-success.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Web%20Client-teal.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
@@ -125,6 +125,12 @@ bhyt-kcb-report/
 ---
 
 ## 📜 Lịch Sử Phiên Bản Tăng Dần (Semantic Versioning)
+
+### **v1.3.1 (18/11/2026) - Khắc Phục Lỗi Mất Dòng Tiêu Đề & Đồng Bộ Tuyệt Đối Với Giao Diện Web**
+- **Sửa lỗi cốt lõi:** Khắc phục lỗi RegExp đa dòng nuốt các ô tiêu đề và số liệu tại các hàng 7, 8, 13, 19, 24, 28, 31 khi xuất tệp Excel.
+- **Khắc phục lỗi công thức:** Xử lý triệt để lỗi `#DIV/0!` tại hàng 10 (Bình quân ngày điều trị nội trú) và hàng 11 (Tỷ lệ vào nội trú).
+- **Thuật toán mới (Row-by-Row Isolation):** Cô lập việc thay thế dữ liệu nghiêm ngặt trong phạm vi từng thẻ `<row>`, bảo đảm an toàn 100% cho các thẻ tự đóng và các ô lân cận.
+- **Đồng bộ số liệu:** Đảm bảo tất cả các trường thông tin (Stt, Nội dung, ĐVT, Số liệu) trên tệp Excel xuất ra khớp hoàn toàn 100% với số liệu hiển thị trên bảng web.
 
 ### **v1.3.0 (07/11/2026) - Chuẩn Hóa Phôi Gốc Báo Cáo File 7 (Sở Y Tế Phú Thọ)**
 - **Nâng cấp cốt lõi:** Xuất file Excel sử dụng trực tiếp cấu trúc nhị phân của phôi gốc `7.Báo cáo KCB BHYT.xlsx` thay vì sinh bảng thô không định dạng.

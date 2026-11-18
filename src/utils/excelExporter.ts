@@ -59,50 +59,77 @@ export async function exportReportToExcel(reportData: ProcessedReportData): Prom
   // 3. Read sheet1.xml
   let sheetXml = await zip.file('xl/worksheets/sheet1.xml')!.async('text');
 
-  // 4. Update data and formulas in Column D (rows 6 to 107) while preserving cell styles (s="...")
+  // 4. Update data and formulas strictly row by row (rows 6 to 107) to avoid tag bleeding
   for (let r = 6; r <= 107; r++) {
+    const rowRegex = new RegExp(`(<row r="${r}"[^>]*>)([\\s\\S]*?)(<\\/row>)`);
+    const rowMatch = sheetXml.match(rowRegex);
+    if (!rowMatch) continue;
+
+    const rowStart = rowMatch[1];
+    let rowContent = rowMatch[2];
+    const rowEnd = rowMatch[3];
+
     const val = valuesMap[r];
     const formula = FORMULA_OVERRIDES[r];
 
-    const cellRegex = new RegExp(`(<c r="D${r}"[^>]*>)(.*?)(<\\/c>)|(<c r="D${r}"[^>]*\\/>)`, 's');
-    const match = sheetXml.match(cellRegex);
+    // Match cell D inside this row's content only:
+    // 1. Self-closing: <c r="D{r}" .../>
+    // 2. Tag with content: <c r="D{r}" ...>...</c>
+    const cellDRegex = new RegExp(`(<c r="D${r}"[^>]*?\\/>)|(<c r="D${r}"[^>]*?>[\\s\\S]*?<\\/c>)`);
+    const dMatch = rowContent.match(cellDRegex);
 
-    if (match) {
-      const fullCell = match[0];
+    let styleAttr = '';
+    if (dMatch) {
+      const fullCell = dMatch[0];
       const sMatch = fullCell.match(/s="(\d+)"/);
-      const styleAttr = sMatch ? ` s="${sMatch[1]}"` : '';
-
-      let numVal = val;
-      // In Excel, percentage format 0% requires ratio 0.0 - 1.0
-      if (r === 11 && typeof val === 'number' && val > 1) {
-        numVal = val / 100;
-      }
-
-      let newCellXml = '';
-      if (formula && val !== undefined && val !== null) {
-        newCellXml = `<c r="D${r}"${styleAttr}><f>${formula}</f><v>${numVal}</v></c>`;
-      } else if (formula) {
-        newCellXml = `<c r="D${r}"${styleAttr}><f>${formula}</f><v>0</v></c>`;
-      } else if (val !== undefined && val !== null && val !== '') {
-        newCellXml = `<c r="D${r}"${styleAttr}><v>${numVal}</v></c>`;
-      } else {
-        newCellXml = `<c r="D${r}"${styleAttr}/>`;
-      }
-
-      sheetXml = sheetXml.replace(cellRegex, newCellXml);
+      if (sMatch) styleAttr = ` s="${sMatch[1]}"`;
+    } else {
+      if (r === 7 || r === 24 || r === 65 || r === 99 || r === 102 || r === 105) styleAttr = ' s="13"';
+      else if (r === 10) styleAttr = ' s="43"';
+      else if (r === 11) styleAttr = ' s="44"';
+      else styleAttr = ' s="41"';
     }
+
+    let numVal = val;
+    // In Excel, percentage format 0% requires ratio 0.0 - 1.0
+    if (r === 11 && typeof val === 'number' && val > 1) {
+      numVal = val / 100;
+    }
+
+    let newCellXml = '';
+    if (formula && val !== undefined && val !== null) {
+      newCellXml = `<c r="D${r}"${styleAttr}><f>${formula}</f><v>${numVal}</v></c>`;
+    } else if (formula) {
+      newCellXml = `<c r="D${r}"${styleAttr}><f>${formula}</f><v>0</v></c>`;
+    } else if (val !== undefined && val !== null && val !== '') {
+      newCellXml = `<c r="D${r}"${styleAttr}><v>${numVal}</v></c>`;
+    } else {
+      newCellXml = `<c r="D${r}"${styleAttr}/>`;
+    }
+
+    if (dMatch) {
+      rowContent = rowContent.replace(cellDRegex, newCellXml);
+    } else {
+      // If cell D was omitted in template row, insert before cell E or at end of row
+      const eMatch = rowContent.match(new RegExp(`<c r="E${r}"`));
+      if (eMatch && eMatch.index !== undefined) {
+        rowContent = rowContent.slice(0, eMatch.index) + newCellXml + rowContent.slice(eMatch.index);
+      } else {
+        rowContent = rowContent + newCellXml;
+      }
+    }
+
+    sheetXml = sheetXml.replace(rowRegex, `${rowStart}${rowContent}${rowEnd}`);
   }
 
-  // 5. Update header title in A1 with dynamic month
-  const a1Regex = /(<c r="A1"[^>]*>)(.*?)(<\/c>)|(<c r="A1"[^>]*\/>)/s;
-  const a1Match = sheetXml.match(a1Regex);
-  if (a1Match) {
-    const sMatch = a1Match[0].match(/s="(\d+)"/);
-    const styleAttr = sMatch ? ` s="${sMatch[1]}"` : ' s="47"';
-    sheetXml = sheetXml.replace(
-      a1Regex,
-      `<c r="A1"${styleAttr} t="inlineStr"><is><t>BÁO CÁO THÁNG ${config.month || 1}</t></is></c>`
-    );
+  // 5. Update header title in A1 with dynamic month inside row 1
+  const a1RowRegex = /(<row r="1"[^>]*>)([\s\S]*?)(<\/row>)/;
+  const a1RowMatch = sheetXml.match(a1RowRegex);
+  if (a1RowMatch) {
+    const a1CellRegex = /(<c r="A1"[^>]*?\/>)|(<c r="A1"[^>]*?>[\s\S]*?<\/c>)/;
+    const newA1 = `<c r="A1" s="47" t="inlineStr"><is><t>BÁO CÁO THÁNG ${config.month || 1}</t></is></c>`;
+    const updatedRow1 = a1RowMatch[2].replace(a1CellRegex, newA1);
+    sheetXml = sheetXml.replace(a1RowRegex, `${a1RowMatch[1]}${updatedRow1}${a1RowMatch[3]}`);
   }
 
   // 6. Force Excel to calculate all formulas upon opening

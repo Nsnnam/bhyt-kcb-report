@@ -15,10 +15,22 @@ import {
 export const DocsTab: React.FC = () => {
   const versions = [
     {
-      version: 'v1.3.0',
-      date: '07/11/2026',
+      version: 'v1.3.1',
+      date: '18/11/2026',
       badge: 'Bản phát hành mới nhất',
       badgeColor: 'bg-emerald-100 text-emerald-800',
+      highlights: [
+        'Sửa lỗi triệt để hiện tượng mất nội dung tiêu đề và ô trống tại các hàng 7, 8, 13, 19, 24, 28, 31 khi xuất Excel.',
+        'Khắc phục hoàn toàn lỗi #DIV/0! tại các hàng công thức (Bình quân ngày điều trị nội trú, Tỷ lệ vào nội trú).',
+        'Nâng cấp thuật toán thay thế XML theo cơ chế cô lập từng dòng (Row-by-Row Isolation), ngăn chặn hoàn toàn việc thẻ tự đóng làm ảnh hưởng tới các ô lân cận.',
+        'Đồng bộ 100% số liệu thống kê giữa giao diện hiển thị trên web và tệp Excel thực tế khi tải về.'
+      ]
+    },
+    {
+      version: 'v1.3.0',
+      date: '07/11/2026',
+      badge: 'Bản ổn định',
+      badgeColor: 'bg-blue-100 text-blue-800',
       highlights: [
         'Nâng cấp toàn diện cơ chế xuất Excel: Sử dụng trực tiếp phôi gốc của File 7 (7.Báo cáo KCB BHYT.xlsx) bảo toàn 100% định dạng chuẩn.',
         'Bảo toàn nguyên vẹn font Times New Roman, cỡ chữ, viền kẻ bảng (borders), màu nền, căn lề và độ rộng từng cột chuẩn của Sở Y tế Phú Thọ.',
