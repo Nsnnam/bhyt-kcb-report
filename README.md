@@ -1,6 +1,6 @@
 # BHYT Analytics Portal - Hệ Thống Tổng Hợp Báo Cáo KCB BHYT
 
-[![Version](https://img.shields.io/badge/version-1.3.1-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
+[![Version](https://img.shields.io/badge/version-1.3.2-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
 [![Deployment](https://img.shields.io/badge/deploy-GitHub%20Pages-success.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Web%20Client-teal.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
@@ -125,6 +125,11 @@ bhyt-kcb-report/
 ---
 
 ## 📜 Lịch Sử Phiên Bản Tăng Dần (Semantic Versioning)
+
+### **v1.3.2 (18/11/2026) - Khắc Phục Lỗi Cảnh Báo "We found a problem with some content" & Chuẩn Hóa XML**
+- **Sửa lỗi cú pháp XML:** Khắc phục triệt để lỗi thẻ đóng XML không khớp tại cột 16596 do hàm thay thế chuỗi hiểu nhầm ký tự `$` trong công thức thành nhóm bắt giữ (`$1`).
+- **Làm sạch phôi gốc:** Loại bỏ công thức `#REF!` rác ngoại lai tại cột G và xóa bỏ tệp bộ đệm `calcChain.xml` lỗi thời để Excel tính toán độc lập không phát sinh lỗi cảnh báo.
+- **Tương thích toàn diện:** Đảm bảo tệp Excel mở tức thì, trơn tru trên mọi phiên bản Microsoft Excel (2016, 2019, 2021, Office 365).
 
 ### **v1.3.1 (18/11/2026) - Khắc Phục Lỗi Mất Dòng Tiêu Đề & Đồng Bộ Tuyệt Đối Với Giao Diện Web**
 - **Sửa lỗi cốt lõi:** Khắc phục lỗi RegExp đa dòng nuốt các ô tiêu đề và số liệu tại các hàng 7, 8, 13, 19, 24, 28, 31 khi xuất tệp Excel.

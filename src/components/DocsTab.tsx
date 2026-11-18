@@ -15,10 +15,22 @@ import {
 export const DocsTab: React.FC = () => {
   const versions = [
     {
-      version: 'v1.3.1',
+      version: 'v1.3.2',
       date: '18/11/2026',
       badge: 'Bản phát hành mới nhất',
       badgeColor: 'bg-emerald-100 text-emerald-800',
+      highlights: [
+        'Khắc phục triệt để lỗi "We found a problem with some content" khi mở file Excel trên Microsoft Excel.',
+        'Xử lý lỗi ký tự đặc biệt ($): Sử dụng hàm thay thế an toàn ngăn ngừa JavaScript hiểu nhầm ký tự $ trong công thức thành nhóm trích xuất ($1), loại bỏ hoàn toàn lỗi thẻ đóng XML lệch vị trí.',
+        'Xóa bỏ tệp bộ đệm calcChain.xml lỗi thời và công thức rác ngoại lai tại cột G (tồn đọng từ phôi cũ) để Excel tái tạo chuỗi tính toán sạch 100%.',
+        'Đảm bảo tệp Excel mở tức thì, mượt mà trên tất cả các phiên bản Microsoft Excel (2016, 2019, 2021, Office 365) mà không xuất hiện bất kỳ cảnh báo phục hồi nào.'
+      ]
+    },
+    {
+      version: 'v1.3.1',
+      date: '18/11/2026',
+      badge: 'Bản ổn định',
+      badgeColor: 'bg-blue-100 text-blue-800',
       highlights: [
         'Sửa lỗi triệt để hiện tượng mất nội dung tiêu đề và ô trống tại các hàng 7, 8, 13, 19, 24, 28, 31 khi xuất Excel.',
         'Khắc phục hoàn toàn lỗi #DIV/0! tại các hàng công thức (Bình quân ngày điều trị nội trú, Tỷ lệ vào nội trú).',

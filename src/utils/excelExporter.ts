@@ -59,6 +59,9 @@ export async function exportReportToExcel(reportData: ProcessedReportData): Prom
   // 3. Read sheet1.xml
   let sheetXml = await zip.file('xl/worksheets/sheet1.xml')!.async('text');
 
+  // Strip broken external formulas (e.g. col G #REF! remnants from older hospital templates)
+  sheetXml = sheetXml.replace(/<c r="G\d+"[^>]*>.*?<\/c>|<c r="G\d+"[^>]*\/>/gs, '');
+
   // 4. Update data and formulas strictly row by row (rows 6 to 107) to avoid tag bleeding
   for (let r = 6; r <= 107; r++) {
     const rowRegex = new RegExp(`(<row r="${r}"[^>]*>)([\\s\\S]*?)(<\\/row>)`);
@@ -108,7 +111,7 @@ export async function exportReportToExcel(reportData: ProcessedReportData): Prom
     }
 
     if (dMatch) {
-      rowContent = rowContent.replace(cellDRegex, newCellXml);
+      rowContent = rowContent.replace(cellDRegex, () => newCellXml);
     } else {
       // If cell D was omitted in template row, insert before cell E or at end of row
       const eMatch = rowContent.match(new RegExp(`<c r="E${r}"`));
@@ -119,7 +122,8 @@ export async function exportReportToExcel(reportData: ProcessedReportData): Prom
       }
     }
 
-    sheetXml = sheetXml.replace(rowRegex, `${rowStart}${rowContent}${rowEnd}`);
+    // Crucial: Use replacer function to prevent JavaScript interpreting $ in formulas as capture tokens ($1, $2, etc.)
+    sheetXml = sheetXml.replace(rowRegex, () => `${rowStart}${rowContent}${rowEnd}`);
   }
 
   // 5. Update header title in A1 with dynamic month inside row 1
@@ -128,8 +132,8 @@ export async function exportReportToExcel(reportData: ProcessedReportData): Prom
   if (a1RowMatch) {
     const a1CellRegex = /(<c r="A1"[^>]*?\/>)|(<c r="A1"[^>]*?>[\s\S]*?<\/c>)/;
     const newA1 = `<c r="A1" s="47" t="inlineStr"><is><t>BÁO CÁO THÁNG ${config.month || 1}</t></is></c>`;
-    const updatedRow1 = a1RowMatch[2].replace(a1CellRegex, newA1);
-    sheetXml = sheetXml.replace(a1RowRegex, `${a1RowMatch[1]}${updatedRow1}${a1RowMatch[3]}`);
+    const updatedRow1 = a1RowMatch[2].replace(a1CellRegex, () => newA1);
+    sheetXml = sheetXml.replace(a1RowRegex, () => `${a1RowMatch[1]}${updatedRow1}${a1RowMatch[3]}`);
   }
 
   // 6. Force Excel to calculate all formulas upon opening
@@ -141,10 +145,21 @@ export async function exportReportToExcel(reportData: ProcessedReportData): Prom
   }
   zip.file('xl/workbook.xml', wbXml);
 
-  // 7. Save updated sheet1.xml
+  // 7. Remove calcChain.xml and its relationships to prevent "Removed Records: Formula from /xl/calcChain.xml" repair popup
+  zip.remove('xl/calcChain.xml');
+
+  let contentTypes = await zip.file('[Content_Types].xml')!.async('text');
+  contentTypes = contentTypes.replace(/<Override[^>]*PartName="\/xl\/calcChain\.xml"[^>]*\/>/g, '');
+  zip.file('[Content_Types].xml', contentTypes);
+
+  let wbRels = await zip.file('xl/_rels/workbook.xml.rels')!.async('text');
+  wbRels = wbRels.replace(/<Relationship[^>]*Target="calcChain\.xml"[^>]*\/>/g, '');
+  zip.file('xl/_rels/workbook.xml.rels', wbRels);
+
+  // 8. Save updated sheet1.xml
   zip.file('xl/worksheets/sheet1.xml', sheetXml);
 
-  // 8. Generate Excel file blob
+  // 9. Generate Excel file blob
   const outBlob = await zip.generateAsync({
     type: 'blob',
     mimeType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
