@@ -1,6 +1,6 @@
 # BHYT Analytics Portal - Hệ Thống Tổng Hợp Báo Cáo KCB BHYT
 
-[![Version](https://img.shields.io/badge/version-1.4.0-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
+[![Version](https://img.shields.io/badge/version-1.4.1-blue.svg)](https://github.com/Nsnnam/bhyt-kcb-report)
 [![Deployment](https://img.shields.io/badge/deploy-GitHub%20Pages-success.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Web%20Client-teal.svg)](https://nsnnam.github.io/bhyt-kcb-report/)
@@ -125,6 +125,11 @@ bhyt-kcb-report/
 ---
 
 ## 📜 Lịch Sử Phiên Bản Tăng Dần (Semantic Versioning)
+
+### **v1.4.1 (18/11/2026) - Khắc Phục Triệt Để Lỗi Mất Dòng 33 Đến 63 Khi Xuất Excel**
+- **Sửa lỗi cú pháp RegExp làm sạch cột G:** Điều chỉnh thứ tự ưu tiên trong biểu thức chính quy, đưa mẫu thẻ tự đóng (`<c .../>`) lên trước thẻ mở/đóng (`<c>...</c>`). Tránh tình trạng regex hiểu nhầm dấu gạch chéo `/` của thẻ tự đóng là thẻ mở rồi nuốt toàn bộ các thẻ đóng `</row>` và ô cột A của các dòng lân cận.
+- **Bảo toàn 100% 107 hàng dữ liệu:** Khắc phục triệt để hiện tượng dòng 33 đến 63 bị trắng hoặc biến mất trong Microsoft Excel.
+- **Kiểm thử thực tế:** Kiểm thử thành công trực tiếp qua COM Automation của Microsoft Excel, mở tệp tức thì với 0 lỗi cảnh báo và bảo toàn trọn vẹn số liệu + công thức.
 
 ### **v1.4.0 (18/11/2026) - Cập Nhật Danh Mục Thuốc Mới & Phân Biệt Đường Dùng (MA_DUONG_DUNG)**
 - **Cập nhật danh mục chuẩn:** Cập nhật 768 dòng danh mục thuốc tham chiếu mới nhất từ Sở Y tế Phú Thọ với đầy đủ các trường thông tin.

@@ -15,10 +15,21 @@ import {
 export const DocsTab: React.FC = () => {
   const versions = [
     {
-      version: 'v1.4.0',
+      version: 'v1.4.1',
       date: '18/11/2026',
       badge: 'Bản phát hành mới nhất',
       badgeColor: 'bg-emerald-100 text-emerald-800',
+      highlights: [
+        'Khắc phục triệt để lỗi mất nội dung từ hàng 33 đến hàng 63 khi xuất Excel.',
+        'Sửa lỗi biểu thức chính quy (RegExp) làm sạch ô cột G: Ưu tiên bắt chính xác thẻ tự đóng (<c .../>) trước thẻ đóng đôi, ngăn chặn hoàn toàn việc xóa nhầm thẻ </row> và ô cột A của các hàng tiếp theo.',
+        'Đã kiểm thử mở trực tiếp trên Microsoft Excel 100% trơn tru, hiển thị đầy đủ 107 hàng dữ liệu và tự động tính toán toàn bộ công thức tổng hợp.'
+      ]
+    },
+    {
+      version: 'v1.4.0',
+      date: '18/11/2026',
+      badge: 'Bản ổn định',
+      badgeColor: 'bg-blue-100 text-blue-800',
       highlights: [
         'Cập nhật toàn bộ thư viện danh mục thuốc tham chiếu mới nhất (768 thuốc) từ Sở Y tế.',
         'Phân biệt chính xác đường dùng thuốc (MA_DUONG_DUNG): Tách biệt hoàn toàn các thuốc có cùng mã thuốc nhưng khác đường dùng (Ví dụ: 40.451 tiêm truyền vào "Tiền dịch truyền", uống vào "Tiền thuốc khác"; 40.1005; 40.55;...).',

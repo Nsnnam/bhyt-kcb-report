@@ -59,8 +59,8 @@ export async function exportReportToExcel(reportData: ProcessedReportData): Prom
   // 3. Read sheet1.xml
   let sheetXml = await zip.file('xl/worksheets/sheet1.xml')!.async('text');
 
-  // Strip broken external formulas (e.g. col G #REF! remnants from older hospital templates)
-  sheetXml = sheetXml.replace(/<c r="G\d+"[^>]*>.*?<\/c>|<c r="G\d+"[^>]*\/>/gs, '');
+  // Strip broken external formulas (e.g. col G #REF! remnants from older hospital templates) safely without tag bleeding
+  sheetXml = sheetXml.replace(/<c r="G\d+"[^>]*?\/>|<c r="G\d+"[^>]*?>[\s\S]*?<\/c>/g, '');
 
   // 4. Update data and formulas strictly row by row (rows 6 to 107) to avoid tag bleeding
   for (let r = 6; r <= 107; r++) {
